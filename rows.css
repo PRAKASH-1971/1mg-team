@@ -1,0 +1,374 @@
+                                                                                  /* checkupcard - row1*/
+
+.row-1{
+    height: 216px;
+    max-width:100%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: none;
+    background-color: white;
+}
+.b2-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: 10px auto 0px auto ;
+     padding: 25px 0px 10px 0px;
+     overflow: none;
+}
+.b2-head p{
+    font-size: 18px;
+}
+.b2-head button{
+    background-color: rgb(255,111,97);
+    height: 25px;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.feature{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 82%;
+    height: 210px;
+}
+.feature::-webkit-scrollbar{
+    display: none;
+}
+
+.feature .box{
+    width: 195px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.feature .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.feature .box img{
+    width: 115px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+                                                                                    /* row-2 */
+                                                                                /* checkupcard - row1*/
+
+.checkup-card{
+    width: 83%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+}
+ 
+.checkup-card::-webkit-scrollbar{
+    display: none;
+}
+.main-div{
+    width: 285px;
+    height: 155px;
+    border: 1px solid rgba(81,81,81, 0.1);
+    padding: 5px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.main-div:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.checkup-card p{
+    font-size: 11px;
+}
+
+.first-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.first-div h1{
+    font-size: 14px;
+    width: 204px;
+    height: 20px;
+}
+.first-div .im-1{
+    width: 65px;
+    height: 28px;
+}
+
+
+.second-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.second-div .im-2{
+    width: 85px;
+       height: 47px;
+       border: 1px solid rgba(81,81,81, 0.4);
+       margin-right: 12px;
+}
+.second-div .im-3{
+width: 44px;
+height: 19px;
+margin-right: 6px;
+
+}
+.second-div h3{
+   font-size: 12px;
+}
+.last-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.last-div p{
+    font-size: 16px;
+   margin-right: 8px;
+}
+.last-div del{
+    font-size: 11px;
+    margin-right: 12px;
+
+}
+.last-div h3{
+    width: 65px;
+    height: 20px;
+    border: 1px solid rgb(35,174,50);
+    border-style: dashed;
+    color: rgb(35,174,50);
+    font-size: 15px;
+    padding: 3px;
+    align-items: center;
+}
+
+
+
+
+                                                                            
+
+
+
+
+
+/* row-3 */
+/*  Dabur */
+
+.dabor-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.dabor-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.dabor{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dabor-list::-webkit-scrollbar{
+    display: none;
+} 
+.dabor .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+} 
+.card-detail:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card-detail .para{
+    color: rgb(149,149,149);
+}
+.dabor .card-detail .im1{
+    width: auto;
+    height: 50%;
+    margin: 0px auto;
+}
+.card-detail .price{
+    font-size: 16px;
+    letter-spacing: 0.033em;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+}
+.card-detail h3{
+    color: rgb(81,81,81);
+    font-size: 14px;
+font-weight: 200;
+letter-spacing: 0.056em;
+line-height: 1.1;
+
+}
+
+.card-detail .rating-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 7px 0px;
+}
+.card-detail .price-section{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  line-height: 0;
+}
+.price-section .mrp{
+    font-weight: 600;
+letter-spacing: 0.083em;
+font-size: 12px;
+line-height: 0;
+color: black;
+margin-right:2px;
+}
+
+.card-detail .rating{
+    width: 42px;
+    height: 20px;
+    background-color:  rgb(35,174,50);
+}
+.card-detail .offer{
+  color:  rgb(35,174,50);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* 4th row probiotic */
+
+.probiotic-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.probiotic-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.probiotic{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.probiotic-list::-webkit-scrollbar{
+    display: none;
+} 
+.probiotic .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.probiotic .card-detail .im1{
+    width: 135px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* <!-- 5th row --> <!-- Pre and probiotics --> */
+
+.pre-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.pre-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.pre{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.pre-list::-webkit-scrollbar{
+    display: none;
+} 
+.pre .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.pre .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* <!-- 6th row --> <!-- Pre and probiotics --> */
