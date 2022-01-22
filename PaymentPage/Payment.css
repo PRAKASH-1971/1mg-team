@@ -1,0 +1,367 @@
+body{
+    background-color: #f6f6f6;
+    margin: 0px;
+    padding: 0px;
+}
+.bg-white{
+    background-color: #fff;
+}
+header{
+    border-bottom: 1px solid rgb(241,244,246);
+}
+.b-b-1{
+    border-bottom: 1px solid rgb(241,244,246);
+}
+.nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    
+}
+.left{
+    display: flex;
+    width: 70%;
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 50%;
+    
+}
+#logo{
+    cursor: pointer;
+}
+#logo > img{
+    width: 25px;
+}
+#med{
+    font-weight: bolder;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    color: red;
+}
+
+
+#lab,#ask,#cov,#ayu,#care{
+    font-weight: bolder;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+
+}
+#safe{
+    background-color: red;
+    color: white;
+    margin-left: -15px;
+    width: 50px;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 2px;
+}
+#save{
+    background-color: red;
+    color: white;
+    margin-left: -15px;
+    width: 120px;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 2px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    align-items: center;
+    font-size: 16px;
+}
+#border{
+    border-left: 1px solid black;
+    height: 60%;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+#signup{
+    margin-left: -25px;
+    cursor: pointer;
+}
+#login{
+    cursor: pointer;
+}
+body{
+    font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+p{
+    color: #666666;
+}
+.largestplatform{
+    border-bottom: 2px solid #f1f4f6;
+}
+.bottomco{
+    background-color: white;
+}
+.largestplatform>h2{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    justify-content: space-around;
+}
+.largestplatform>#hh2{
+    display: flex;
+    justify-content: space-around;
+}
+.getlink{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #f1f4f6;
+}
+.getlink>input{
+    height: 40px;
+    width: 350px;
+    margin-top: 10px;
+    background-color: #f1f4f6;
+    border: 0;
+    margin-left: 30px;
+}
+.getlink>button{
+    background-color: red;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.knowus{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fefcf8;
+    border-bottom: 2px solid #f1f4f6;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+h3{  
+      margin-left: 35px;
+
+}
+#buttonlast1{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: 0;
+    
+}
+#div9{
+    margin-left: 35px;
+}
+#sociallink>img{
+     width: 30px;
+}
+#dowapp{
+    width: 25px;
+    margin-left: 25px;
+}
+#img12{
+    width: 55px;
+}
+#flexmain{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fefcf8;
+    border-bottom: 2px solid #f1f4f6;
+}
+#img21{
+    width: 175px;
+}
+#flex{
+    display: flex;
+}
+#healthcaremain{
+    background-color: #fefcf8;
+    border-bottom: 2px solid #f1f4f6;
+
+}
+#healthcare1{
+    display: flex;
+    justify-content: center;
+    grid-gap: 60px;
+}
+#h2tag{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+#lstone{
+    border-top: 2px solid #f1f4f6;
+      background-color: #fefcf8;
+      font-family: 'Roboto Mono', monospace;
+}
+#payment{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefcf8;
+}
+#payment1>img{
+    width: 35px;
+}
+.cartPayment-container{
+    margin-bottom: 0;
+    padding: 0;
+    
+}
+.style-main{
+    height: 100%;
+    margin: auto;
+    max-width: calc(100% - 380px);
+    width: calc(100% - 380px);
+    
+}
+.style-box1{
+    box-shadow: 0 1px 2px 0 rgb(248 248 248);
+    justify-content: center;
+}
+.left-box{
+    background-color: #fff3e3;
+    padding: 20px 0 20px 15px;
+    width: 220px;
+
+}
+.left-box1{
+    height: 60px;
+    padding: 0 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    background-color: #fff;
+
+}
+.left-box1>img{
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    width: 30px;;
+}
+.left-box1>span{
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.left-box2{
+    height: 60px;
+    padding: 0 10px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+.left-box21>img{
+    width: 30px;
+}
+.right-box{
+    margin: 0;
+    padding: 25px;
+    width: calc(100%-220px);
+    background-color: white;
+    width: 65%;
+}
+.right-box1{
+    font-size: 18px;
+    color: rgba(33,33,33,.87);
+    padding: 20px 20px 0 20px;
+
+}
+.right-box1>b{
+    font-weight: 700;
+
+}
+.style-box1{
+    display: flex;
+
+}
+.right-box2{
+    font-size: 12px;
+    color: #757575;
+    padding: 20px;
+}
+.cardnumber{
+    margin-bottom: 10px;
+    color: #757575;
+    padding:  0px 20px 0px 20px;
+}
+.right-box32>input{
+    width: 100%;
+    height: 20px;
+}
+.right-box41{
+    float: left;
+    color: #757575;
+    padding: 20px;
+}
+.right-box41121>input{
+    width: 65px;
+    height: 20px;
+
+}
+.right-box4131>input{
+    width: 45px;
+    height: 20px;
+
+}
+.right-box413{
+    margin-bottom: 10px;
+}
+.right-box41121{
+    margin-bottom: 20px;
+}
+.right-box411{
+    margin-bottom: 10px;
+}
+.right-box412{
+    display: block;
+}
+.right-box41121{
+    height: 30px;
+    max-height: 30px;
+    position: relative;
+}
+.button1>button{
+    background-color: red;
+    border: 0;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+.right-boxnameofcard{
+    color: #757575;
+    padding: 20px;
+}
+.right-boxnameofcard>input{
+    width: 100%;
+    margin-top: 15px;
+    height: 20px;
+
+}
+.button1{
+    padding: 20px;
+}
+.button1>button{
+    cursor: pointer;
+}
+.logo50{
+    display: flex;
+
+}
+.logo50>img{
+    width: 50px;
+    padding: 10px;
+}
+.borderbox{
+    display: flex;
+    border: 1px solid ;
+    width: 50%;
+    height: 600px;
+}
