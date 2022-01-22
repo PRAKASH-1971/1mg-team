@@ -1,4 +1,5 @@
 function homepage(){
-    alert("Go To Home Page")
-    window.location.href = "Payment.html";
+    alert("Go To Home Page");
+    window.location.href="Payment.html";
+
 }
