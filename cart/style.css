@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* --------Header------- */
+
+header {
+  display: block;
+}
+.top-row {
+  background: #fff;
+  margin: 0;
+  border-bottom: 1px solid #f1f4f6;
+}
+
+/* -------Header-Left-Part------ */
+
+.left-col {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  line-height: 42px;
+}
+.logo-style {
+  display: inline-block;
+  text-align: center;
+}
+.style-search-bar {
+  padding: 6px 13px 6px 1px;
+}
+.style-search-bar > div {
+  position: relative;
+}
+.style-search-form {
+  background-color: #f1f4f6;
+  display: flex;
+  align-items: center;
+}
+.style-search-input {
+  font-size: 14px;
+  line-height: 21px;
+  display: block;
+  padding: 6px 30px 7px 0;
+  border: none;
+  outline: 0;
+  bottom: 19px;
+  box-shadow: none;
+  color: #3e3e3e;
+  text-indent: 12px;
+  height: 34px;
+  border-radius: 0 3px 3px 0;
+  background-color: #f1f4f6;
+  width: calc(100% - 25px);
+  display: inline;
+}
+.header_search_icon {
+  background-position: 0 -184px;
+  width: 17px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* -------Header-Right-Part------ */
+
+.right-col {
+  display: flex;
+  justify-content: flex-end;
+  height: 46px;
+  align-items: center;
+}
+.style-need-help {
+  margin-left: 10px;
+}
+.style-help-link span {
+  color: #212121;
+  font-size: 14px;
+}
+
+/* --------Middle-------- */
+
+.style-container {
+  max-width: 1080px;
+  margin-left: 11.11133%;
+}
+.cart-container {
+  padding: 12px 0;
+  padding-top: 46px;
+  position: relative;
+  margin: 0;
+  min-height: 600px;
+}
+/* =------Middle Left Container------ */
+.cart-items {
+  padding: 0 16px;
+}
+.cart-items-container {
+  margin-top: 0;
+  padding: 0 8px;
+}
+.cart-line-items {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.cartline-item-list {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  background: #fff;
+  margin-bottom: 16px;
+  border-radius: 2px;
+  padding: 1px;
+}
+.cartline-item-container:last-child {
+  border-bottom: 0;
+  padding-bottom: 10px;
+}
+.cartline-item-container {
+  border-bottom: 1px solid #c7c7c7;
+  padding: 10px;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* -----Middle Right Part----- */
+
+.cart-right-items {
+  margin-top: 26px;
+}
+.empty-space {
+  margin-top: 15px;
+}
+.coupan-offer-outer {
+  margin-top: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  border-radius: 2px;
+}
+.coupan-offer-inner {
+  padding: 0 16px;
+  margin-top: 0;
+  font-size: 12px;
+  color: #757575;
+}
+.care-coupan-container {
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.coupan-icon-img {
+  display: inline-block;
+  margin-right: 2.5px;
+  width: 90px;
+}
+.new-coupan {
+  display: inline-block;
+  color: #1aab2a;
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 16px;
+  padding: 4px 0;
+}
+.coupan-discription {
+  font-size: 12px;
+  color: #5b5353;
+  line-height: 1.6;
+}
+strike {
+  text-decoration: line-through;
+}
+.care-plan-button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.know-btn {
+  text-align: center;
+  width: 46%;
+  padding: 6px 20px;
+  margin: 5px 20px 0 0;
+  background-color: #fff;
+  color: #ff6f61;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1.5px solid #ff6f61;
+}
+.join-btn {
+  text-align: center;
+  width: 46%;
+  padding: 6px 20px;
+  margin: 5px 0 0;
+  background-color: #ff6f61;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 4px;
+  color: #fff;
+}
+.coupan-box {
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  padding: 12px 8px;
+  display: block;
+}
+.coupan-box-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.coupan-header-left {
+  display: flex;
+  align-items: center;
+}
+.coupan-icon {
+  margin-right: 8px;
+  max-width: 24px;
+}
+.coupan-code {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2b2b2b;
+  padding-right: 8px;
+  align-items: center;
+  display: flex;
+}
+.coupan-header-right {
+  background: #e2e2e2;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.next-icon {
+  width: 8px;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+/* ----Middle Total bill part---- */
