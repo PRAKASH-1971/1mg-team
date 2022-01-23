@@ -1,0 +1,1210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      E-commerce Responsive Product Slider | Responsive Product Slider |
+      Bootstrap Product Slider
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="css/multislider.css" rel="stylesheet" />
+    <link href="css/slider_item.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Header First Row -->
+
+      <div class="row top-row">
+        <div class="col-xl-8 col-md-12">
+          <ul class="left">
+            <img
+              id="logo"
+              src="https://www.1mg.com/images/tata_1mg_logo.svg"
+              alt="logo"
+            />
+            <li>
+              <a href="#">
+                <div class="red_text">MEDICINES</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tab">LAB TESTS</div>
+                <div class="red_btn btn-anim">SAFE</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div id="">ASK DOCTOR</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div id="">COVID-19</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div id="">AYURVEDA</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="tab">
+                  CARE PLAN<span class="red_btn">SAVE MORE</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="right">
+            <li>
+              <a href="#">
+                <div id="login">Login</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div id="signup">Sign Up</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div id="offer">Offers</div>
+              </a>
+            </li>
+
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+              alt="delivery"
+            />
+
+            <li>
+              <a href="#">
+                <div id="help">Need Help?</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Header Second Row -->
+
+      <div class="row bottom-row">
+        <div class="col-8 row searchbar b-b-1 bg-white">
+          <div class="col-3 city-locator">
+            <span><i class="fa fa-map-marker"></i></span>
+            <input
+              value="New Delhi"
+              id="location"
+              placeholder="Enter your city"
+              name="city"
+              class="input-city"
+              data-auto-location-select="dweb"
+              autocomplete="off"
+            />
+            <span class="city-detect" data-auto-location-detect="true"
+              ><img src="crosshair.svg" alt="" />
+            </span>
+          </div>
+          <div class="col-9 product-search">
+            <form class="form-search">
+              <input
+                class="searchInput"
+                value
+                autocomplete="off"
+                data-auto-search-bar="true"
+                placeholder="Search for Medicines and Health Products"
+              />
+              <span class="search-icon"
+                ><img width="20px" height="15px" src="search.svg" alt=""
+              /></span>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-4 submition">
+          <div class="quick-buy">
+            <div class="quick-icon">
+              <img src="quick.svg" alt="" />
+            </div>
+            <span class="quick-buy-text"
+              >QUICK BUY! Flat 25% off on medicines*</span
+            >
+          </div>
+
+          <div class="upload-btn">
+            <a class="upload-link" href="#" data-auto-upload-prescription="true"
+              ><span>Upload</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Bottom Category -->
+      <div class="category">
+        <ul>
+          <li>
+            <select name="" id="">
+              <option value="">All Medicines</option>
+              <option value="">Medicines</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Medicines by Therapeutic Class</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Featured</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Vitamins & Nutrition</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Diabetes</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Healthcare Devices</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Personal Care</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Health Conditions</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Ayurveda Products</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <option value="">Homeopathy</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+              <option value="">Chosse 1</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Middle -->
+    <div class="middle">
+      <!--  Middle Banner Section -->
+      <div class="banner">
+        <img
+          src="https://www.1mg.com/images/page-specific/about-us/top-banner.png"
+          alt="banner"
+        />
+        <div class="banner-heading">
+          <div>We make healthcare</div>
+          <div>Understandable, Accessible and Affordable.</div>
+        </div>
+      </div>
+      <!-- Middle About US Content -->
+      <div class="about-content">
+        <div class="about-heading-1">
+          <div>About Tata 1 mg</div>
+        </div>
+        <div class="about-heading-2">
+          <div>India's lending digital consumer healthcare platform</div>
+        </div>
+        <div class="about-list">
+          <div>
+            <div class="list-img">
+              <img
+                src="https://www.1mg.com/images/page-specific/about-us/medicine-icon.png"
+                alt="about-png"
+              />
+            </div>
+            <div class="about-cat-head">E-Pharmacy</div>
+            <div class="about-cat-des">
+              <div class="about-cat-text">
+                Order medicines and health products online and get it delivered
+              </div>
+              <div class="about-cat-text">at home from licensed pharmacies</div>
+            </div>
+          </div>
+          <div>
+            <div class="list-img">
+              <img
+                src="https://www.1mg.com/images/page-specific/about-us/ask-a-doctor-icon.png"
+                alt="about-png"
+              />
+            </div>
+            <div class="about-cat-head">Online Consultations</div>
+            <div class="about-cat-des">
+              <div class="about-cat-text">Consult qualified and registered</div>
+              <div class="about-cat-text">doctors on chat for free</div>
+            </div>
+          </div>
+          <div>
+            <div class="list-img">
+              <img
+                src="https://www.1mg.com/images/page-specific/about-us/lab-test-icon.png"
+                alt="about-png"
+              />
+            </div>
+            <div class="about-cat-head">Labs Tests</div>
+            <div class="about-cat-des">
+              <div class="about-cat-text">
+                Book lab tests online for hassle-free, home sample collection
+                service.
+              </div>
+              <div class="about-cat-text">
+                <div>Get reports online.</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="list-img">
+              <img
+                src="https://www.1mg.com/images/page-specific/about-us/authentic.png"
+                alt="about-png"
+              />
+            </div>
+            <div class="about-cat-head">Authentic Information</div>
+            <div class="cat-text-des">
+              <div class="about-cat-text">
+                Read medicine and health content written by qualified doctors
+                and
+              </div>
+              <div class="about-cat-text">health professionals</div>
+              <div class="about-red-text">
+                <a href="#">VIEW OUR EDITORIAL POLICY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-description">
+          <div>
+            1mg.com brings to you an online platform, which can be accessed for
+            all your health needs. We are trying to make healthcare a
+            hassle-free experience for you. Get your allopathic, ayurvedic,
+            homeopathic medicines, vitamins & nutrition supplements and other
+            health-related products delivered at home. Lab tests? That too in
+            the comfort of your home. Doctor consult? Yes, we got that covered
+            too.
+          </div>
+        </div>
+      </div>
+      <!-- Middle Leadership Section -->
+      <div class="leadership">
+        <div class="leader-heading">Leadership</div>
+        <div class="first-leader">
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/profile-1.png"
+            alt=""
+          />
+          <h3>Prashant Tandon</h3>
+          <p>CEO & Co-Founder</p>
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/linkedin-0.png"
+            alt=""
+          />
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/twitter-0.png"
+            alt=""
+          />
+        </div>
+        <div class="second-leader">
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/profile-2.png"
+            alt=""
+          />
+          <h3>Gaurav Agarwal</h3>
+          <p>CTO & Co-Founder</p>
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/linkedin-0.png"
+            alt=""
+          />
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/twitter-0.png"
+            alt=""
+          />
+        </div>
+        <div class="third-leader">
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/profile-3.png"
+            alt=""
+          />
+          <h3>Vikas Chauhan</h3>
+          <p>Co-Founder</p>
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/linkedin-0.png"
+            alt=""
+          />
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/twitter-0.png"
+            alt=""
+          />
+        </div>
+        <div class="fourth-leader">
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/profile-4.png"
+            alt=""
+          />
+          <h3>Tanmay Saksena</h3>
+          <p>COO</p>
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/linkedin-0.png"
+            alt=""
+          />
+          <img
+            src="https://www.1mg.com/images/page-specific/about-us/twitter-0.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Middle Our Story Section -->
+      <div class="story">
+        <h4 class="story-heading">Our Story</h4>
+        <div class="row row-1">
+          <div class="col-4 story-bottom">
+            <img
+              src="https://www.1mg.com/images/page-specific/about-us/idea.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-3 story-line">
+            <div>
+              <div class="red-line"></div>
+            </div>
+          </div>
+          <div class="col-4 story-bottom">
+            <h3>The idea</h3>
+            <div class="story-des">
+              <div>
+                In healthcare, the information around our medicines and lab
+                tests is either unavailable or incomprehensible to us.
+              </div>
+              <div>
+                So we decided to create a platform that stood for transparent,
+                authentic and accessible information for all.
+              </div>
+              <div>
+                This idea grew into a company and Tata 1mg was created in 2015.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-2">
+          <div class="col-4 story-bottom">
+            <h3>What We Offer</h3>
+            <div class="story-des">
+              <div>
+                We provide accurate, authoritative & trustworthy information on
+                medicines and help people use their medicines effectively and
+                safely.
+              </div>
+              <div>
+                We get medicines and other health products delivered at home in
+                1000+ cities across India from licensed and verified pharmacies.
+              </div>
+              <div>
+                We also provide diagnostic services from certified labs and
+                online doctor consults at any time, from anywhere.
+              </div>
+            </div>
+          </div>
+          <div class="col-3 story-line">
+            <div>
+              <div class="red-line"></div>
+            </div>
+          </div>
+          <div class="col-4 story-bottom">
+            <img
+              src="https://www.1mg.com/images/page-specific/about-us/whatwedid.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row row-3">
+          <div class="col-4 story-bottom">
+            <img
+              src="https://www.1mg.com/images/page-specific/about-us/journey.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-3 story-line">
+            <div>
+              <div class="red-last-line"></div>
+            </div>
+          </div>
+          <div class="col-4 story-bottom">
+            <h3>The journey so far</h3>
+            <div class="story-des">
+              <div>
+                We’ve made health care accessible to millions by giving them
+                quality care at affordable prices.
+              </div>
+              <div>
+                We continue to expand our rich and extensive medical content and
+                are working hard to make this information available in multiple
+                local languages.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Middle Legit Script Certified Section -->
+      <div class="legit">
+        <div class="row">
+          <div class="col-3 legit-img-box">
+            <div class="legit-img">
+              <img
+                src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-9">
+            <div>
+              <div class="legit-heading">LegitScript certified</div>
+              <div class="legit-des">
+                LegitScript is a verification and monitoring service for online
+                pharmacies and Tata 1mg is the first Indian healthcare website
+                to earn LegitScript certification.
+              </div>
+            </div>
+            <div>
+              <div class="legit-heading">
+                We are certified "ISO/IEC 27001:2013"
+              </div>
+              <div class="legit-des">
+                ISO/IEC 27001:2013 is a certification which lays out
+                implementation and management guidelines to safeguard digital
+                and paper information. This certification ensures that an
+                organization has implemented the required steps to protect all
+                sensitive information against unauthorized access. Tata 1mg has
+                been accredited with this certification.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Middle Work And Culture Section -->
+
+      <div class="video-banner">
+        <div class="video-section1">
+          <div class="video-heading">
+            <div>How we bring you closer to better health</div>
+          </div>
+          <div class="video-des">
+            <p>
+              Over the past three years, we've worked to build a healthcare
+              platform that not only delivers medicine – but a platform that
+              guides customers to the right and affordable care. Today, Tata 1mg
+              is present in 1000+ cities– And we’re just getting started.
+            </p>
+          </div>
+        </div>
+        <div class="video-section2">
+          <div class="row">
+            <div class="col-6 video-col-1">
+              <div class="video-image">
+                <img
+                  src="https://i.ytimg.com/vi/spI6T5xwdHc/hqdefault.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="video-logo">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/c_fit,a_ignore,q_60,fl_lossy,f_auto/v1501049227/marketing/rvcznkwbne3uejtteclw.png"
+                  alt=""
+                />
+              </div>
+              <div class="video-thumb">How to buy medicines online</div>
+            </div>
+            <div class="col-6 video-col-2">
+              <div class="video-image">
+                <img
+                  src="https://i.ytimg.com/vi/tRBwrAaSp9w/hqdefault.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="video-logo">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/c_fit,a_ignore,q_60,fl_lossy,f_auto/v1501049227/marketing/rvcznkwbne3uejtteclw.png"
+                  alt=""
+                />
+              </div>
+              <div class="video-thumb">Get lab tests at home</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Working With Us Section -->
+
+      <div class="work-with-us">
+        <div class="row">
+          <div class="col-6 work-img-part">
+            <img
+              src="https://www.1mg.com/images/page-specific/about-us/workwithus.png"
+              alt=""
+            />
+          </div>
+          <div class="col-6 work-text-part">
+            <div class="work-heading">Our work and culture</div>
+            <div class="work-des">
+              At Tata 1mg we strongly believe that a great culture is an
+              important ingredient for a startup’s success. Our culture promotes
+              radical candor, fast paced iterations, collaboration and a flat
+              hierarchy. Listed below are our core values that enshrine our
+              culture.
+            </div>
+            <ul>
+              <li>
+                <div>
+                  <b>Be the CEO - own outcomes</b>
+                </div>
+                At one Tata 1mg we believe that every individual has the power
+                to drive impact and change. We encourage our team members to
+                take ownership and charge not paying heed to organizational
+                trappings. As a result individuals (and not just leaders) have
+                the potential to drive big impact on our business and customers.
+              </li>
+              <li>
+                <div>
+                  <b>Done is better than perfect</b>
+                </div>
+                We are highly experimental and data driven organization. As such
+                we believe in shipping soon and often. We believe that in the
+                long run failing fast beats all else.
+              </li>
+              <li>
+                <div>
+                  <b>Team and not individual</b>
+                </div>
+                We believe in the power of the team. For us a superstar team is
+                much more important than a superstar individual.
+              </li>
+              <li>
+                <div>
+                  <b>Accountability with empathy</b>
+                </div>
+                We believe that everyone can shine in an environment that’s
+                right for them and we strive to help our team members discover
+                that environment. Our communication philosophy is that of
+                radical candor - Challenge Directly but Care Personally.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Middle Awards and Recognition Section -->
+      <div class="style-award-main">
+        <h4>Awards and Recognition</h4>
+        <div class="style-award">
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="188"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/mbillion-south-asia.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>'Winner in Health & Well Being Category'</i>
+            </div>
+            <b> 2019-2020</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="142"
+                  height="80"
+                  src="	https://www.1mg.com/images/page-specific/about-us/india-mobile-congress.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i
+                >Best Mobile Innovation for Health award ' at the India Mobile
+                Congress</i
+              >
+            </div>
+            <b>- 2019.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="255px"
+                  height="67px"
+                  src="	https://www.1mg.com/images/page-specific/about-us/content-leadership.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i
+                >'Best Content in a Healthcare/Fitness App' in the India Content
+                Leadership Awards</i
+              >
+            </div>
+            <b>- 2019.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="191"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/bml-annual.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i
+                >Won BML Munjal Award for 'Business Excellence through Learning
+                and Development'</i
+              >
+            </div>
+            <b>- 2018.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="68"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/smart-ceo.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i
+                >Recognized as Top 50 venture in The Smart CEO-Startup50 India
+                2017 program</i
+              >
+            </div>
+            <b>- 2017.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="95"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/mary-makers.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Recognized in Mary Meeker's Internet Trends</i>
+            </div>
+            <b>- 2017.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="226"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/unreasonablegroup.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>The only company for SD#3 Health & Well Being for all</i>
+            </div>
+            <b>- 2017.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="236"
+                  height="45"
+                  src="https://www.1mg.com/images/page-specific/about-us/ndtv.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Won 'New Kid on the Block' at NDTV Unicorn Awards</i>
+            </div>
+            <b>- 2016.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="105"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/iqa-img.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Best Online Pharmacy in India Award</i>
+            </div>
+            <b>- 2016.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="102"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/golden-cart.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Bronze in The Golden Cart Awards </i>
+            </div>
+            <b>- 2016.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="228"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/frost.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Innovative Healthcare Service </i>
+            </div>
+            <b>- 2016.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="228"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/tie-global.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>TiE Lumis Entrepreneurial Excellence Award</i>
+            </div>
+            <b>- 2016.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="155"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/gmasa.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>The Best App in Medical category </i>
+            </div>
+            <b>- 2016.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="139"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/vcc-circle.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Most promising Healthcare startup </i>
+            </div>
+            <b>- 2014.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="68"
+                  height="80"
+                  src="https://www.1mg.com/images/page-specific/about-us/apple.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>One of the Best Made in India </i>
+            </div>
+            <b>- 2014.</b>
+          </div>
+          <div class="style-award-card">
+            <div class="style-award-img">
+              <a href="#"
+                ><img
+                  width="255"
+                  height="78"
+                  src="https://www.1mg.com/images/page-specific/about-us/billionth.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="style-award-text">
+              <i>Winner of m-Billionth award for m-health in South Asia</i>
+            </div>
+            <b>- 2014.</b>
+          </div>
+        </div>
+        <div class="style-award-btn"><a href="#">View All</a></div>
+      </div>
+      <!-- Middle App Links Section -->
+      <div class="app-link">
+        <div class="app-link1">
+          <a href="#"
+            ><img
+              src="https://www.1mg.com/images/page-specific/about-us/play-store.png"
+              alt="app-link"
+          /></a>
+        </div>
+        <div class="app-link2">
+          <a href="#"
+            ><img
+              src="https://www.1mg.com/images/page-specific/about-us/play-store.png"
+              alt="app-link"
+          /></a>
+        </div>
+      </div>
+      <!-- Middle Contact Us -->
+      <div class="contact">
+        <div class="contact-banner">
+          <img
+            class="contact-banner-img"
+            src="	https://www.1mg.com/images/page-specific/about-us/contact-us-bg.png"
+            alt=""
+          />
+          <div class="contact-us">
+            <div class="contact-banner-text">
+              <div class="contact-banner-heading">Contact Us</div>
+              <div class="contact-banner-des">
+                <div>
+                  For any kind of questions, or if you just want to say “hello”,
+                </div>
+                <div>
+                  feel free to get in touch at
+                  <span
+                    ><a class="contact-banner-link" href="#"
+                      >care@1mg.com</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-banner-card">
+              <div>
+                <div class="contact-address-heading">Registered Address</div>
+                <div class="contact-address-des">
+                  <b>
+                    B-23, G. T. Karnal Road, Industrial Area, Delhi -110033,
+                    India
+                  </b>
+                </div>
+              </div>
+              <div>
+                <div class="contact-address-heading">Corporate Address</div>
+                <div class="contact-address-des">
+                  <b>
+                    Tower -B-46/4, 5th floor, Presidency Building, Mehrauli
+                    Gurgaon Road, Sector-14, Gurugram, Haryana 122001 India
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Stats Top Bar -->
+      <div class="top-bar">
+        <h3 class="top-heading">INDIA’S LARGEST HEALTHCARE PLATFORM</h3>
+        <div class="top-stats-bar">
+          <div>
+            <div class="stats-num">160m+</div>
+            <div class="stats-text">Visitors</div>
+          </div>
+          <div>
+            <div class="stats-num">27m+</div>
+            <div class="stats-text">Orders Delivered</div>
+          </div>
+          <div>
+            <div class="stats-num">1800+</div>
+            <div class="stats-text">Cities</div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Stats Middle Bar -->
+      <div class="border-bottom"></div>
+      <!-- Footer Stats Down Bar -->
+      <div class="down-bar">
+        <div class="down-bar-text">Get the link to download App</div>
+        <div class="down-bar-input">
+          <form>
+            <input
+              type="tel"
+              title="Please enter valid 10 digits"
+              id="phoneNumber"
+              class="input-phone"
+              placeholder="Enter Phone Number"
+              maxlength="10"
+              autocomplete="off"
+              value
+              pattern="[6-9]\d{9}"
+              required
+            />
+            <button type="submit" class="next-btn">Send Link</button>
+          </form>
+        </div>
+        <div class="down-bar-empty"></div>
+      </div>
+
+      <!-- Footer Main Section -->
+
+      <div class="knowus">
+        <div id="#know">
+          <h3>Knows Us</h3>
+          <ul>
+            <li><a href="">about us</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Press Coverge</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Become a Health Partner</a></li>
+          </ul>
+        </div>
+        <div id="know2">
+          <h3>Our Policies</h3>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Editorial Policy</a></li>
+            <li><a href="">Return Policy</a></li>
+            <li><a href="">IP Pilicy</a></li>
+            <li><a href="">Grievance Redressal Policy</a></li>
+          </ul>
+        </div>
+        <div id="#know3">
+          <h3>Our service</h3>
+          <ul>
+            <li><a href="">Order Medicines</a></li>
+            <li><a href="">Books Lab Tests</a></li>
+            <li><a href="">Consuit a Doctor</a></li>
+            <li><a href="">Ayuveda Articles</a></li>
+            <li><a href="">Hindi Articles</a></li>
+            <li><a href="">Care Plan</a></li>
+          </ul>
+        </div>
+        <div id="know4">
+          <ul>
+            <h3>Connect</h3>
+            <div id="div9">
+              <li>Social link</li>
+              <div id="sociallink">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571132241/facebook-rebrand_ocvkak.svg"
+                />
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571132854/twitter-rebrand_qiai2s.svg"
+                />
+                <img
+                  src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571737406/youtube_gkbh1t.svg"
+                />
+                <img
+                  src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571132397/linkedin-rebrand_tbeedv.svg"
+                />
+                <img
+                  src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1601285810/marketing/jf3bry3wl6zzkd14yces.svg"
+                />
+              </div>
+
+              <li>Want daily dose of health?</li>
+              <button id="buttonlast1">SIGN UP</button>
+            </div>
+          </ul>
+        </div>
+        <div id="know5">
+          <h3>Download App</h3>
+          <div id="dowapp">
+            <img
+              id="img21"
+              src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png"
+            />
+            <img
+              id="img12"
+              src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504884.png?token=exp=1642564255~hmac=bf3e592a7d3734c2297ce30991255bb9"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="flexmain">
+        <div id="flex">
+          <img
+            src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571132631/secure-rebrand_x6f8yq.svg"
+            alt=""
+          />
+          <div id="flex1">
+            <h5>Reliable</h5>
+            <p>
+              All products displayed on Tata 1mg are <br />procured from
+              verified and licensed <br />pharmacies. All labs listed on the
+              platform <br />are accredited
+            </p>
+          </div>
+        </div>
+        <div id="flex">
+          <img
+            src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571132500/reliable-rebrand_rcpof3.svg"
+            alt=""
+          />
+          <div id="flex1">
+            <h5>Secure</h5>
+            <p>
+              Tata 1mg uses Secure Sockets Layer (SSL) <br />128-bit encryption
+              and is Payment Card <br />Industry Data Security Standard (PCI
+              DSS) <br />compliant
+            </p>
+          </div>
+        </div>
+
+        <div id="flex">
+          <img
+            src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571131870/affordable-rebrand_ivgidq.svg"
+            alt=""
+          />
+          <div id="flex1">
+            <h5>Affordable</h5>
+            <p>
+              Find affordable medicine substitutes, <br />save up to 50% on
+              health products, up to <br />80% off on lab tests and free doctor
+              consultations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="healthcaremain">
+        <div id="healthcare1">
+          <img src="https://static.legitscript.com/seals/729605.png" />
+          <img
+            src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png"
+          />
+        </div>
+        <div id="h2tag">
+          India's only LegitScript and ISO/ IEC 27001 certified online
+          healthcare platform
+        </div>
+        <div id="lstone">
+          <div>Know more about Tata 1mg</div>
+        </div>
+      </div>
+
+      <div id="payment">
+        <div id="linepayment">
+          <p>
+            © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and
+            Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't
+            process requests for Schedule X and other habit forming drugs.
+          </p>
+        </div>
+        <div id="payment1">
+          <img src="https://cdn-icons-png.flaticon.com/128/196/196578.png" />
+          <img src="https://cdn-icons-png.flaticon.com/128/899/899113.png" />
+          <img src="https://cdn-icons-png.flaticon.com/128/4766/4766928.png" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
