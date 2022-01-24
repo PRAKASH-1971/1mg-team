@@ -49,6 +49,7 @@ var categoriers = [
     },
 ]
 
+
 categoriers.map(function(elem){
    var image = document.createElement("img")
    var p  = document.createElement("p")

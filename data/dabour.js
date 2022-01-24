@@ -8,7 +8,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹410",
       offer:"12% off",
-      price:"₹361"
+      price:"361"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1608188601/c4umsblj9pxya8gaanyk.jpg",
@@ -19,7 +19,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹245",
       offer:"7% off",
-      price:"₹228"
+      price:"228"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…auto/v1608285794/cropped/cyvlxvtqxms07bi6gh0b.jpg",
@@ -30,7 +30,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹3289",
       offer:"15% off",
-      price:"₹2796"
+      price:"2796"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1628101607/orfyvvjd1nkaoyimmgzf.jpg",
@@ -41,7 +41,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹1290",
       offer:"10% off",
-      price:"₹1161"
+      price:"1161"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1608188601/c4umsblj9pxya8gaanyk.jpg",
@@ -52,7 +52,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹459",
       offer:"7% off",
-      price:"₹427"
+      price:"427"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1605617529/hqw8q77ms4kdingfsb2j.jpg",
@@ -63,7 +63,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹1335",
       offer:"8% off",
-      price:"₹1288"
+      price:"1288"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1606138813/hddwywjg0poyasnelf0x.jpg",
@@ -74,7 +74,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹290",
       offer:"7% off",
-      price:"₹270"
+      price:"270"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1625508985/y5urphvefoq1kosykxuu.jpg",
@@ -85,7 +85,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹1399",
       offer:"7% off",
-      price:"₹1301"
+      price:"1301"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1612768557/qmmug1yktuszhmanxsyt.jpg",
@@ -96,7 +96,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹1080",
       offer:"12% off",
-      price:"₹952"
+      price:"952"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1613566796/iheqzrewt0n4auxbd2l6.jpg",
@@ -107,7 +107,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹375",
       offer:"4% off",
-      price:"₹360"
+      price:"360"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…auto/v1600089136/cropped/xrrnuoyv97tdejpkngdm.png",
@@ -118,7 +118,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹223",
       offer:"5% off",
-      price:"₹212"
+      price:"212"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1613566715/w84792bbroguuvsqyyh8.jpg",
@@ -129,9 +129,12 @@ var dabour = [
       p2:"MRP",
       strike:"₹190",
       offer:"4% off",
-      price:"₹182"
+      price:"182"
     },
 ]
+
+var cartarr = JSON.parse(localStorage.getItem("cartItems")) || []
+
 
 dabour.map(function(elem) {
     console.log("dabour");
@@ -153,7 +156,11 @@ dabour.map(function(elem) {
     c.className = "card-detail"
 
     image.setAttribute("src",elem.im)
+    image.id = "pop-im"
+
     h2.textContent = elem.h2
+    h2.id = "pop-name"
+
     p.className = "para"
     p.textContent = elem.p
     image.className = "im1"
@@ -167,11 +174,18 @@ dabour.map(function(elem) {
     p2.textContent = elem.p2
     strike.textContent = elem.strike
     offer.textContent = elem.offer
+
     p2.className = "mrp"
     offer.className = "offer"
 
-    price.textContent = elem.price
+    price.textContent = `₹${elem.price}`
     price.className = "price"
+
+    c.addEventListener("click", function(){
+      addtocart(elem);
+      console.log(elem);
+      window.location.href = "../popup/popup.html"
+    })
 
     a.append(rating,p1)
     b.append(p2,strike,offer)
@@ -179,3 +193,11 @@ dabour.map(function(elem) {
     document.querySelector(".dabor").append(c)
 })
 
+     
+function addtocart(elem){
+  console.log(elem);
+          cartarr.push(elem);
+          localStorage.setItem("cartItems",JSON.stringify(cartarr));
+}
+
+      

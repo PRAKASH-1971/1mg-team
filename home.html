@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="rows.css">
+    <link rel="stylesheet" href="./login-signup/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/976e422f89.js" crossorigin="anonymous"></script>
 
@@ -23,16 +24,16 @@
                 </div>
                 <div class="mid">
                     <a style="color: rgb(255,111,107);" href="">MEDICINES</a>
-                    <a href="">LAB TESTS</a>
-                    <a href="">ASK DOCTOR</a>
+                    <a href="">LAB TESTS<span class="red_btn">SAVE</span></a>
+                    <a href="">ASK DOCTOR </a>
                     <a href="">COVID-19</a>
                     <a href="">AYURVEDA</a>
-                    <a href="">CARE PLAN</a>
+                    <a href="">CARE PLAN <span class="red_btn">SAVE MORE</span></a>
                 </div>
                 <div class="right">
                     <div class="login">
-                        <div>Login</div>
-                        <div style="border-left: 3px solid black;padding-left: 10px;">Sign Up</div>
+                        <div id="loginopen" style="cursor: pointer;">Login</div>
+                        <div id="signupopen" style="border-left: 3px solid black;padding-left: 10px;cursor: pointer;">Sign Up</div>
                     </div>
                     <div class="offer">
                         <p>Offers</p>
@@ -106,9 +107,7 @@
                     </div>
                 </div>
                 <div class="img-3">
-                    <img class="i-1"
-                        src="./images/ad1.png"
-                        alt="add-1">
+                    <img class="i-1" src="./images/ad1.png" alt="add-1">
                     <img class="i-2"
                         src="	https://onemg.gumlet.io/image/upload/w_480,h_200,,…_auto,f_auto/v1642725813/fkhscaoc05tetu7ajdyk.png"
                         alt="add-2">
@@ -120,28 +119,33 @@
 
         </div>
         <div class="body">
+
             <!-- 1st row -->
             <div class="b-img1">
                 <img src="https://onemg.gumlet.io/image/upload/v1638879520/ccdg5rr0hssuyw6nw27m.png" alt="body-1-img">
                 <div class="b1-head">
-                    <p>Featured brands</p>
+                    <p>Full body health checkups</p>
                     <button>SEE ALL</button>
                 </div>
-            </div>
-            <div class="row-1">
-                <div class="feature">
-                </div>
-            </div>
-
-            <!-- 2nd row -->
-            <div class="b2-head">
-                <p>Full body health checkups</p>
-                <button>SEE ALL</button>
             </div>
             <div class="row-1">
                 <div class="checkup-card">
                 </div>
             </div>
+          
+
+
+            <!-- 2nd row -->
+            <div class="b2-head">
+                <p>Featured brands</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="row-1">
+                <div class="feature">
+                </div>
+            </div>
+           
+
 
             <!-- 3rd row -->
             <div class="b2-head">
@@ -153,18 +157,32 @@
                 </div>
             </div>
 
-            <!-- 3rd row -->
+
+            <!-- 4th row -->
             <div class="b2-head">
                 <p>Top offers in health drinks</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="dabor-row">
+            <div class="dabor-row" id="daburid">
                 <div class="dabor-list">
                     <div class="dabor"></div>
                 </div>
             </div>
 
-            <!-- 4th row -->
+            <!-- 5th row -->
+            <!-- popular categories -->
+            <div class="b2-head">
+                <p>Popular categories</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="row-1">
+                <div class="popular feature">
+                </div>
+            </div>
+
+
+
+            <!-- 6th row -->
             <!-- 1mg health products -->
             <div class="b2-head">
                 <p>Tata 1mg health products</p>
@@ -177,9 +195,10 @@
             </div>
 
 
-            <!-- 5th row -->
-              <!-- Pre and probiotics | Supplment f the week -->
-              <div class="b2-head">
+
+            <!-- 7th row -->
+            <!-- Pre and probiotics | Supplment f the week -->
+            <div class="b2-head">
                 <p>Pre and probiotics | Supplment f the week</p>
                 <button>SEE ALL</button>
             </div>
@@ -191,112 +210,191 @@
 
 
 
-
-            <!-- 6th row -->
-            <!-- popular categories -->
+            
+            <!-- 8th row  explore.js -->
             <div class="b2-head">
-                <p>Popular categories</p>
-                <button>SEE ALL</button>
-            </div>
-            <div class="row-1">
-                <div class="popular feature">
-                </div>
-            </div>
-
-                                                       <!-- modify from here -->
-
-             <div class="b2-head">
                 <p>Explore something new</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="explore-row">
+                <div class="explore-list">
+                    <div class="explore"></div>
+                </div>
             </div>
+            
 
-
+            <!-- 9th row  flash.js -->
             <div class="b2-head">
                 <p>Flash deals</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="flash-row">
+                <div class="flash-list">
+                    <div class="flash"></div>
+                </div>
             </div>
+            
 
+            <!-- 10th row  explore.js -->
             <div class="b2-head">
                 <p>Shop by Health Concerns</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="upper-feature">
+            <div class="shop-health feature">
             </div>
+        </div>
+            
 
-
+            
+            <!-- 11th row  trending.js -->
             <div class="b2-head">
                 <p>Trending products</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="trending-row">
+                <div class="trending-list">
+                    <div class="trending"></div>
+                </div>
             </div>
 
 
+            <!-- 12th row  explore.js -->
+            <div class="b2-head">
+                <p>Natural drinks | Top brands</p>
+            </div>
+            <div class="upper-feature">
+            <div class="drinks feature">
+            </div>
+        </div>
+
+
+            <!-- 13th row  deals.js -->
             <div class="b2-head">
                 <p>Deals of the day</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="deals-row">
+                <div class="deals-list">
+                    <div class="deals"></div>
+                </div>
+            </div>
+            
+            
+            <!-- 14th row  explore.js -->
+            <div class="b2-head">
+                <p>Personal care</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="upper-feature">
+                <div class="personal-care feature">
+                </div>
             </div>
 
 
+            
+            <!-- 15th row  bp.js -->
             <div class="b2-head">
                 <p>BP monitors</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="bp-row">
+                <div class="bp-list">
+                    <div class="bp"></div>
+                </div>
             </div>
 
-        <div class="b2-head">
-                <p>Cough, Cold & Fever</p>
-                <button>SEE ALL</button>
-            </div>
-            <div class="row-1">
-            </div>
+           
 
-
+            <!-- 16th row  explore.js -->
             <div class="b2-head">
-                <p>Chyawanprash</p>
+                <p>Mineral supplements</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="upper-feature">
+                <div class="mineral feature">
+                </div>
             </div>
 
 
-               <div class="b2-head">
+            <!-- 17th row  explore.js -->
+            <div class="b2-head">
                 <p>Heating Aids</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="heating-row">
+                <div class="heating-list">
+                    <div class="heating"></div>
+                </div>
             </div>
 
-           <div class="b2-head">
+
+            <!-- 18th row  explore.js -->
+            <div class="b2-head">
                 <p>Trending Ayurvedic Products</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
+            <div class="ayur-row">
+                <div class="ayur-list">
+                    <div class="ayur"></div>
+                </div>
             </div>
 
-           <div class="b2-head">
+
+            <!-- 19th row  explore.js -->
+            <div class="b2-head">
                 <p>Popular Combo Deals</p>
                 <button>SEE ALL</button>
             </div>
-            <div class="row-1">
-
+            <div class="combo-row">
+                <div class="combo-list">
+                    <div class="combo"></div>
+                </div>
             </div>
 
+            <!-- 22th row  explore.js -->
+            <div class="b2-head">
+                <p>Homeopathic remedies</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="upper-feature">
+                <div class="homeopathic feature">
+                </div>
+            </div>
 
+            <!-- checkup card -->
+            <!-- last 1 row -->
+            <div class="b2-head">
+                <p>Pathology Tests | Upto 80% off</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="row-1">
+                <div class="pathology checkup-card">
+                </div>
+            </div>
+
+                        <!-- last 2 row -->
             <div class="b2-head">
                 <p>Radiology Tests | Upto 80% off</p>
                 <button>SEE ALL</button>
             </div>
             <div class="row-1">
+                <div class="radiology checkup-card">
+                </div>
             </div>
-            
+
+            <!--  last row  -->
+            <div class="b2-head">
+                <p>Ayurveda</p>
+                <button>SEE ALL</button>
+            </div>
+            <div class="lastrw">
+            <div class="last-box">
+            </div>
+            </div>
+
+            <div class="b2-head">
+            </div>
         </div>
 
 
@@ -428,7 +526,7 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="knowus">
                 <div id="#know">
                     <h3>Knows Us</h3>
@@ -470,8 +568,7 @@
                         <div id="div9">
                             <p>Social link</p>
                             <div id="sociallink">
-                                <img
-                                    src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png">
+                                <img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png">
                                 <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png">
                                 <img
                                     src="https://toppng.com/uploads/preview/linkedin-square-logo-comments-linkedin-icon-black-11563087424lpctodfamj.png">
@@ -485,14 +582,14 @@
                 <div id="know5">
                     <h3>Download App</h3>
                     <div id="dowapp">
-                        <img id="img-1" src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png">
-                        <img id="img-2"
-                            src="https://www.vortex6.com/wp-content/uploads/2019/09/app-store.png">
+                        <img id="img-1"
+                            src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png">
+                        <img id="img-2" src="https://www.vortex6.com/wp-content/uploads/2019/09/app-store.png">
                     </div>
                 </div>
             </div>
 
-            
+
             <div id="flexmain">
                 <div id="flex">
                     <img src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571132631/secure-rebrand_x6f8yq.svg"
@@ -500,7 +597,8 @@
                     <div id="flex1">
                         <h2>Reliable</h2>
                         <p>All products displayed on Tata 1mg are <br>procured from verified and licensed
-                            <br>pharmacies. All labs listed on the platform <br>are accredited</p>
+                            <br>pharmacies. All labs listed on the platform <br>are accredited
+                        </p>
                     </div>
                 </div>
                 <div id="flex">
@@ -509,7 +607,8 @@
                     <div id="flex1">
                         <h2>Secure</h2>
                         <p>Tata 1mg uses Secure Sockets Layer (SSL) <br>128-bit encryption and is Payment Card
-                            <br>Industry Data Security Standard (PCI DSS) <br>compliant</p>
+                            <br>Industry Data Security Standard (PCI DSS) <br>compliant
+                        </p>
                     </div>
                 </div>
 
@@ -535,14 +634,173 @@
 
 
             <div id="payment">
-                    <p>
-                        © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs
-                        and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming
-                        drugs.
-                    </p>
-                    <img src="./images/last.png">
+                <p>
+                    © 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs
+                    and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming
+                    drugs.
+                </p>
+                <img src="./images/last.png">
             </div>
         </div>
+
+                     <!-- Login page -->
+        <div class="login-page">
+            <div class="part">
+                <div class="part-1">
+                    <div class="slideshow-container">
+        
+                        <div class="mySlides fade">
+                            <img src="/images/ecommerce.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Everthing, Home Delivered</h2>
+                                <p>Get medicine information, order medicines, book lab tests and <br> consult doctors online from the
+                                    comfort of your home</p>
+                            </div>
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="/images/grocery.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Order Online</h2>
+                                <p>Get medicine information, order medicines, book lab tests and <br> consult doctors online from the
+                                    comfort of your home</p>
+                            </div>
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="/images/undraw1.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Medicines Home Delivered</h2>
+                                <p>Get medicine information, order medicines, book lab tests and <br> consult doctors online from the
+                                    comfort of your home</p>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/undraw_medicine_.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Health Related Queries</h2>
+                                <p>View medicine information like usage, side effects and cheaper substitutes before you take them.</p>
+                            </div>
+                        </div>
+                        <div style="text-align:center;">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="part-2">
+                    <div class="icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="head">
+                            <h2>Login</h2>
+                        <p>Get access to your orders,lab tests & doctor consultations</p>
+                    </div>
+                    <input type="text" placeholder="Enter Email ID or Mobile Number">
+                    <div class="bottom">
+                        <button id="login-success">LOGIN</button>
+                        <div class="txt">
+                            <div class="txt-1">
+                                <p>New on 1 mg?</p>
+                                <h3>Sign Up</h3>
+                            </div>
+                            <div class="txt-2">
+                                <p>Have a corporate account?</p>
+                                <h3>Click Here</h3>
+                            </div>
+                        </div>
+                        <div class="txt2">
+                            <p>By logging in, you agree to our</p>
+                            <a href="https://www.1mg.com/tnc">Terms and Conditions & Privacy Policy</a>
+                            <h3>Need Help? Get In Touch</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signup page -->
+        <div class="signup-page">
+            <div class="part">
+                <div class="part-1">
+                    <div class="slideshow-container">
+        
+                        <div class="mySlides fade">
+                            <img src="/images/signup1.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Everthing, Home Delivered</h2>
+                                <p>Get medicine information, order medicines, book lab tests and <br> consult doctors online from the
+                                    comfort of your home</p>
+                            </div>
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="/images/signup2.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Order Online</h2>
+                                <p>Get medicine information, order medicines, book lab tests and <br> consult doctors online from the
+                                    comfort of your home</p>
+                            </div>
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="/images/undraw1.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Medicines Home Delivered</h2>
+                                <p>Get medicine information, order medicines, book lab tests and <br> consult doctors online from the
+                                    comfort of your home</p>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/undraw_medicine_.svg" style="width:100%">
+                            <div class="text">
+                                <h2>Health Related Queries</h2>
+                                <p>View medicine information like usage, side effects and cheaper substitutes before you take them.</p>
+                            </div>
+                        </div>
+                        <div style="text-align:center;">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="part-2">
+                    <div id="icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="head">
+                            <h2>Sign Up</h2>
+                        <p>Please enter your Mobile number to receive One Time <br> Password (OTP)</p>
+                    </div>
+                    <input type="text" placeholder="Enter Email ID or Mobile Number" id="mblnum">
+                    <div class="bottom">
+                        <button id="login-go">CONTINUE</button>
+                        <div class="txt">
+                            <div class="txt-1">
+                                <p>New on 1 mg?</p>
+                                <h3>Sign Up</h3>
+                            </div>
+                            <div class="txt-2">
+                                <p>Have a corporate account?</p>
+                                <h3>Click Here</h3>
+                            </div>
+                        </div>
+                        <div class="txt2">
+                            <p>By logging in, you agree to our</p>
+                            <a href="https://www.1mg.com/tnc">Terms and Conditions & Privacy Policy</a>
+                            <h3>Need Help? Get In Touch</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
 </body>
 
 </html>
@@ -554,3 +812,21 @@
 <script src="./data/probiotics.js"></script>
 <script src="./data/popular.js"></script>
 <script src="./data/pre.js"></script>
+<script src="./data/explore.js"></script>
+<script src="./data/flash.js"></script>
+<script src="./data/trending.js"></script>
+<script src="./data/deals.js"></script>
+<script src="./data/bp.js"></script>
+<script src="./data/shop-health.js"></script>
+<script src="./data/heating.js"></script>
+<script src="./data/ayur.js"></script>
+<script src="./data/combo.js"></script>
+<script src="./data/drinks.js"></script>
+<script src="./data/personal-care.js"></script>
+<script src="./data/mineral.js"></script>
+<script src="./data/homeopathic.js"></script>
+<script src="./data/pathology.js"></script>
+<script src="./data/radiology.js"></script>
+<script src="./data/last.js"></script>
+
+<script src="./login-signup/login.js"></script>

@@ -31,7 +31,10 @@
     font-size: 12px;
     font-weight: 700;
 }
-
+.upper-feature{
+    width: 100%;
+    background-color: white;
+}
 .feature{
     margin: 0px auto;
     display: flex;
@@ -371,4 +374,437 @@ margin-right:2px;
 }
 
 
-/* <!-- 6th row --> <!-- Pre and probiotics --> */
+/*  <!-- 7th row  explore.js -->   */
+
+.explore-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.explore-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.explore{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.explore-list::-webkit-scrollbar{
+    display: none;
+} 
+.explore .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.explore .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+/* <!-- 8th row  flash.js -->  */ 
+
+.flash-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.flash-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.flash{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.flash-list::-webkit-scrollbar{
+    display: none;
+} 
+.flash .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.flash .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* <!-- 11th row  explore.js -->  */ 
+
+.trending-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.trending-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.trending{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.trending-list::-webkit-scrollbar{
+    display: none;
+} 
+.trending .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.trending .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* <!-- 13th row  explore.js -->  */ 
+.deals-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.deals-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.deals{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.deals-list::-webkit-scrollbar{
+    display: none;
+} 
+.deals .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.deals .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* <!-- 15th row  explore.js -->  */ 
+.bp-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.bp-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.bp{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.bp-list::-webkit-scrollbar{
+    display: none;
+} 
+.bp .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.bp .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+
+/* <!-- 17th row  heating.js -->  */ 
+.heating-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.heating-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.heating{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.heating-list::-webkit-scrollbar{
+    display: none;
+} 
+.heating .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.heating .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+/* <!-- 18th row  ayur.js -->  */ 
+.ayur-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.ayur-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.ayur{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.ayur-list::-webkit-scrollbar{
+    display: none;
+} 
+.ayur .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.ayur .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* <!-- 19th row  ayur.js -->  */ 
+.combo-row{
+    max-width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.combo-list{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.combo{
+    width: fit-content;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.combo-list::-webkit-scrollbar{
+    display: none;
+} 
+.combo .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding:10px;
+    height: 334px;
+    width: 153px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0px 8px;
+    object-fit: contain;
+   color: rgb(149,149,149);
+}
+.combo .card-detail .im1{
+    width: auto;
+    max-width: 136px;
+    height: 50%;
+    margin: 0px auto;
+}
+
+
+/* last 2 row of checkup cards */
+
+.pathology .main-div{
+    margin: auto;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.radiology .main-div{
+    margin: auto;
+    height: 120px;
+    margin-right: 20px;
+}
+
+
+.lastrw{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+.last-box{
+    width: 83%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.last-box::-webkit-scrollbar{
+    display: none;
+}
+
+.last-box .div3{
+    width: 280px;
+    height: 220px;
+    border-radius: 10px;
+    border: 1px solid #f1f4f6;
+    margin-right: 20px;
+}
+
+.div3:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.div1 img{
+          width: 280px;
+          height: 150px;
+           border-radius: 10px;
+}
+
+.last-box .div2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.div2 h3{
+    font-size: 14px;
+}
+.div2 p{
+    font-size: 12px;
+}

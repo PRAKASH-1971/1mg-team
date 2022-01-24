@@ -153,7 +153,12 @@ predata.map(function(elem) {
     c.className = "card-detail"
 
     image.setAttribute("src",elem.im)
+    image.id = "pop-im"
+
+
     h2.textContent = elem.h2
+    h2.id = "pop-name"
+
     p.className = "para"
     p.textContent = elem.p
     image.className = "im1"
@@ -173,8 +178,15 @@ predata.map(function(elem) {
     price.textContent = elem.price
     price.className = "price"
 
+c.addEventListener("click", function(){
+  addtocart(elem);
+  console.log(elem);
+  window.location.href = "../popup/popup.html"
+})
+
     a.append(rating,p1)
     b.append(p2,strike,offer)
     c.append(image,h2,p,a,b,price)
     document.querySelector(".pre").append(c)
 })
+

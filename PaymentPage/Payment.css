@@ -2,7 +2,118 @@ body{
     background-color: #f6f6f6;
     margin: 0px;
     padding: 0px;
+    width: 100vw;
 }
+
+.nav{
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid rgba(81,81,81, 0.1);
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.left-1{
+    width: 10%;
+}
+.left img{
+    width: 90px;
+    height: 50px;
+}
+.mid{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+                                 /* sale tag  */
+.red_btn {
+    background: hsl(5, 100%, 69%);
+    height: 10px;
+    width: auto;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 12px !important;
+    color: aliceblue;
+  }
+  .btn-anim {
+    background-color: #ff6f61;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  @keyframes glowing {
+    0% {
+      background-color: #ff6f61;
+      box-shadow: 0 0 5px #ff6f61;
+    }
+    50% {
+      background-color: #d6564a;
+      box-shadow: 0 0 20px #d6564a;
+    }
+    100% {
+      background-color: #cc4c41;
+      box-shadow: 0 0 5px #cc4c41;
+    }
+  }
+  .btn-anim {
+    animation: glowing 1300ms infinite;
+  }
+.right-1{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 14px;
+}
+.right-1 .login{
+    width: 35%;
+    justify-content: space-around;
+    color: rgb(81,81,81);
+}
+
+.right-1 .offer{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login, .offer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav a{
+    color: rgb(33,33,33);
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+line-height: 1.5;
+font-size: 17px;
+letter-spacing: -0.039em;
+font-style: normal;
+}
+
+.nav a:hover{
+    color: rgb(255,111,107);
+    cursor: pointer;
+}
+
+
+
+
+
+
 .bg-white{
     background-color: #fff;
 }
@@ -156,7 +267,6 @@ h3{
     background-color: red;
     color: white;
     border: 0;
-    
 }
 #div9{
     margin-left: 35px;
@@ -364,4 +474,10 @@ h3{
     border: 1px solid ;
     width: 50%;
     height: 600px;
+}
+
+@media screen and (max-width: 800px) { 
+    .bottomPage{
+        display: none;
+    }
 }

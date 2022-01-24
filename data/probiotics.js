@@ -1,4 +1,4 @@
-var dabour = [
+var probiotic = [
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1642507775/gmkrpf1imjj9djwvq4gq.jpg",
       h2:"Tata 1mg Multivitamin Supreme, Zincz Calciu....",
@@ -8,7 +8,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹995",
       offer:"49% off",
-      price:"₹507"
+      price:"507"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1637324194/gc3u9gfc331wtsipnljl.jpg",
@@ -19,7 +19,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹595",
       offer:"49% off",
-      price:"₹304"
+      price:"304"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1641378789/rbaugppr9gb507pafj1k.jpg",
@@ -30,7 +30,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹190",
       offer:"20% off",
-      price:"₹152"
+      price:"152"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1642508036/wtr1cpntuka5ugtayvgd.jpg",
@@ -41,7 +41,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹995",
       offer:"49% off",
-      price:"₹508"
+      price:"508"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1642507827/fwram2p7rbkoigjg6zas.jpg",
@@ -52,7 +52,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹995",
       offer:"49% off",
-      price:"₹507"
+      price:"507"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1638444070/nwhioxrxmwjkaxitryag.jpg",
@@ -63,7 +63,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹400",
       offer:"39% off",
-      price:"₹244"
+      price:"244"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1631894537/w9eyedqdlnlntuc0zl7d.jpg",
@@ -74,7 +74,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹995",
       offer:"69% off",
-      price:"₹307"
+      price:"307"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1642507956/q9xnukhrycqpcypv7aeg.jpg",
@@ -85,7 +85,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹595",
       offer:"65% off",
-      price:"₹204"
+      price:"204"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1631894048/uqehwqt3b6cwuuvqrymf.jpg",
@@ -96,7 +96,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹895",
       offer:"49% off",
-      price:"₹457"
+      price:"457"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1637324287/kdsqxgex4bszim7z092g.jpg",
@@ -107,7 +107,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹895",
       offer:"49% off",
-      price:"₹457"
+      price:"457"
     },
     {
       im:"	https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1631892302/bpstjff7hzg9uecj54n7.jpg",
@@ -118,7 +118,7 @@ var dabour = [
       p2:"MRP",
       strike:"₹745",
       offer:"32% off",
-      price:"₹505"
+      price:"505"
     },
     {
       im:"https://onemg.gumlet.io/image/upload/a_ignore,w_38…_auto,f_auto/v1637324126/ue6wi2sqdbabrosmezmm.jpg",
@@ -129,11 +129,13 @@ var dabour = [
       p2:"MRP",
       strike:"₹995",
       offer:"49% off",
-      price:"₹507"
+      price:"507"
     },
 ]
 
-dabour.map(function(elem) {
+var cartarr = JSON.parse(localStorage.getItem("cartItems")) || []
+
+probiotic.map(function(elem) {
     console.log("dabour");
     var image = document.createElement("img")
     var h2 = document.createElement("h3")
@@ -153,7 +155,11 @@ dabour.map(function(elem) {
     c.className = "card-detail"
 
     image.setAttribute("src",elem.im)
+    image.id = "pop-im"
+
     h2.textContent = elem.h2
+    h2.id = "pop-name"
+
     p.className = "para"
     p.textContent = elem.p
     image.className = "im1"
@@ -170,11 +176,28 @@ dabour.map(function(elem) {
     p2.className = "mrp"
     offer.className = "offer"
 
-    price.textContent = elem.price
+     price.textContent = `₹${elem.price}`
     price.className = "price"
+
+
+    c.addEventListener("click", function(){
+      addtocart(elem);
+      console.log(elem);
+      window.location.href = "../popup/popup.html"
+    })
+
 
     a.append(rating,p1)
     b.append(p2,strike,offer)
     c.append(image,h2,p,a,b,price)
     document.querySelector(".probiotic").append(c)
+
 })
+
+     
+function addtocart(elem){
+  console.log(elem);
+          cartarr.push(elem);
+          localStorage.setItem("cartItems",JSON.stringify(cartarr));
+}
+
