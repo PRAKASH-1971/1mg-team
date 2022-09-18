@@ -83,3 +83,13 @@ hr{
     width: 93%;
     margin: auto;
 }
+
+@media screen and (max-width: 800px) { 
+    .nav input{
+        display: none !important;
+    }
+    .main{
+        width: 90%;
+        margin: auto;
+    }
+}

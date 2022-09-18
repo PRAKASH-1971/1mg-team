@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 .container{
-    width: 1500px;
+    width: 100% !important;
     margin: auto;
     overflow: hidden;
     height: auto;
@@ -104,25 +104,16 @@ body {
     justify-content: space-around;
     flex-direction: row;
     font-size: 14px;
-}
-.right .login{
-    width: 35%;
-    justify-content: space-around;
-    color: rgb(81,81,81);
+    padding: 10px;
 }
 
-.right .offer{
-    width: 60%;
+.offer{
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.login, .offer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+
 .nav a{
     color: rgb(33,33,33);
     text-decoration: none;
@@ -134,10 +125,7 @@ letter-spacing: -0.039em;
 font-style: normal;
 }
 
-.nav a:hover{
-    color: rgb(255,111,107);
-    cursor: pointer;
-}
+ 
 
 
 
@@ -564,8 +552,21 @@ li{
     height: 41px;
 }
 
+.responsive-mid{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+.responsive-login{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
 
-@media screen and (max-width: 800px) { 
+
+@media screen and (max-width: 1000px) { 
     .head{
         display: flex;
         flex-direction: column;
@@ -584,13 +585,11 @@ li{
         justify-content: center;
         flex-direction: column;
     }
-    .right{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-2{
+    .offer{
         display: none;
+    }
+    .nav-2,.nav-3,.offer{
+        display: none !important;
     }
     .dropdown{
         height: 400px;
@@ -650,3 +649,187 @@ li{
         padding: 0px 0px 30px 0px;
     }
 }
+
+@media screen and (max-width: 1000px) { 
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 15px;
+        font-size: 22px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        margin: 20px;
+        /* background: rgb(117, 112, 112); */
+        position: relative;
+      }
+      .nav-links a{
+        color: white;
+      }
+      .b-img1{
+        margin-top: 150px;
+      }
+      
+}
+
+
+/* html navbar css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 95%;
+    position: relative;
+    color: black;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    height: fit-content;
+    position: relative;
+    top: 0;
+  }
+  
+  .nav > .nav-links > a {
+    /* display: inline-block; */
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .login-page,.signup-page{
+        width: 100% !important;
+    }
+       .part-1{
+          display: none !important;
+        }
+        .part{
+            display: flex;
+            flex-direction: column;
+            width: fit-content !important;
+        }
+        .part-2{
+            margin: 0;
+            width: 100% !important;
+            text-align: center;
+        }
+        .part-2 .head p{
+    display: none;
+}
+.part-2 h2{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+
+    .nav-title{
+        margin-left: -150px;
+    }
+    .b-img1{
+        display: none;
+    }
+    .row-1{
+          margin-top: 20px;
+
+      }
+      .main-div{
+        width: 203px !important;
+        height: 158px !important;
+      }
+      .card-detail{
+          height: 280px !important;
+          width: 120px !important;
+          margin-right: 10px;
+      }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      background: #7e7878;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: -20px;
+    }
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      color: white !important;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+     .largestplatform>#hh2 {
+        display: none;
+    }
+    .btn>input{
+        width: 90%;
+        margin: auto;
+    }
+  }

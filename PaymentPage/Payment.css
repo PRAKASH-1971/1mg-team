@@ -475,9 +475,45 @@ h3{
     width: 50%;
     height: 600px;
 }
+.style-main{
+    width: fit-content;
+    margin: auto;
+}
+.borderbox{
+  width: fit-content;
+  margin: auto;
+}
 
 @media screen and (max-width: 800px) { 
+    .cartPayment-container{
+        width: 100%;
+    }
     .bottomPage{
         display: none;
     }
+    .mid{
+        display: none;
+    }
+    .right-1{
+        display: none;
+    }
+    .left-box{
+        display: none;
+    }
+    .right-box{
+        width: 100% !important;
+    }
+    .logo50{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    .cartPayment-container{
+        width: 100%;
+    }
+    .right-box{
+        width: 270px !important;
+    }
+   
 }

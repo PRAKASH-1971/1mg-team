@@ -196,4 +196,7 @@ padding: 15px;
     .part-b{
         width: 90%;
     }
+    .nav input{
+        display: none !important;
+    }
 }
